@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONYX VPN — Secure V2Ray Service</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        yellow: { 400: '#fbbf24', 500: '#f59e0b', 600: '#d97706' }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="text-white">
+    <nav class="sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <a href="index.html" class="text-xl font-bold gradient-text float-animation">
+                    <i class="fas fa-shield-alt mr-2"></i>ONYX VPN
+                </a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="text-white hover:text-yellow-400 transition-all duration-300">Home</a>
+                    <a href="#pricing" class="text-white hover:text-yellow-400 transition-all duration-300">Pricing</a>
+                    <a href="#servers" class="text-white hover:text-yellow-400 transition-all duration-300">Servers</a>
+                    <a href="#faq" class="text-white hover:text-yellow-400 transition-all duration-300">FAQ</a>
+                    <a href="#contact" class="text-white hover:text-yellow-400 transition-all duration-300">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-4 py-8">
+        <div class="text-center py-16 fade-in-up">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6 gradient-text float-animation">
+                Secure Your Internet Connection
+            </h1>
+            <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto fade-in-up">
+                Fast, encrypted V2Ray VPN. Bypass restrictions and protect your privacy.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 fade-in-up">
+                <a href="#pricing" class="btn-primary"><i class="fas fa-rocket mr-2"></i>View Plans</a>
+                <a href="#faq" class="btn-secondary"><i class="fas fa-question-circle mr-2"></i>FAQ</a>
+            </div>
+        </div>
+
+        <div class="rounded-lg border border-yellow-400 border-opacity-30 bg-gray-900 bg-opacity-50 p-6 mb-12 max-w-3xl mx-auto text-center text-gray-300 text-sm">
+            <i class="fas fa-info-circle text-yellow-400 mr-2"></i>
+            This site is the <strong class="text-white">static</strong> landing page on GitHub Pages.
+            Login, dashboard, and payments run on your <strong class="text-white">hosted server</strong> (Docker, VPS, etc.).
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 my-16">
+            <div class="card fade-in-up">
+                <div class="text-5xl text-yellow-400 mb-4"><i class="fas fa-shield-alt"></i></div>
+                <h3 class="text-xl font-bold mb-2 text-yellow-400">Strong Encryption</h3>
+                <p class="text-gray-300">Modern protocols and careful key handling for your traffic.</p>
+            </div>
+            <div class="card fade-in-up" style="animation-delay: 0.2s;">
+                <div class="text-5xl text-yellow-400 mb-4"><i class="fas fa-bolt"></i></div>
+                <h3 class="text-xl font-bold mb-2 text-yellow-400">Low Latency</h3>
+                <p class="text-gray-300">Optimized paths and global locations for a smooth experience.</p>
+            </div>
+            <div class="card fade-in-up" style="animation-delay: 0.4s;">
+                <div class="text-5xl text-yellow-400 mb-4"><i class="fas fa-globe"></i></div>
+                <h3 class="text-xl font-bold mb-2 text-yellow-400">Global Network</h3>
+                <p class="text-gray-300">Multiple regions so you can connect where you need.</p>
+            </div>
+        </div>
+
+        <section id="pricing" class="scroll-mt-24 mb-20">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">Choose Your Plan</h2>
+                <p class="text-xl text-gray-300">Example pricing (configure in your live app)</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="pricing-card card fade-in-up">
+                    <div class="text-center">
+                        <h3 class="text-2xl font-bold mb-2 text-yellow-400">7 Days</h3>
+                        <div class="my-6"><span class="text-5xl font-bold gradient-text">$5.99</span></div>
+                        <p class="text-gray-300 mb-6">7 Days Access</p>
+                        <ul class="text-left space-y-3 mb-8 text-gray-300 text-sm">
+                            <li><i class="fas fa-check text-yellow-400 mr-2"></i>Unlimited bandwidth</li>
+                            <li><i class="fas fa-check text-yellow-400 mr-2"></i>All server locations</li>
+                            <li><i class="fas fa-check text-yellow-400 mr-2"></i>V2Ray / VLESS config</li>
+                        </ul>
+                        <span class="btn-primary w-full text-center block opacity-90 cursor-default">Subscribe on live app</span>
+                    </div>
+                </div>
+                <div class="pricing-card card fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="text-center">
+                        <h3 class="text-2xl font-bold mb-2 text-yellow-400">30 Days</h3>
+                        <div class="my-6"><span class="text-5xl font-bold gradient-text">$19.99</span></div>
+                        <p class="text-gray-300 mb-6">30 Days Access</p>
+                        <ul class="text-left space-y-3 mb-8 text-gray-300 text-sm">
+                            <li><i class="fas fa-check text-yellow-400 mr-2"></i>Unlimited bandwidth</li>
+                            <li><i class="fas fa-check text-yellow-400 mr-2"></i>All server locations</li>
+                            <li><i class="fas fa-check text-yellow-400 mr-2"></i>V2Ray / VLESS config</li>
+                        </ul>
+                        <span class="btn-primary w-full text-center block opacity-90 cursor-default">Subscribe on live app</span>
+                    </div>
+                </div>
+                <div class="pricing-card card fade-in-up" style="animation-delay: 0.4s;">
+                    <div class="text-center">
+                        <h3 class="text-2xl font-bold mb-2 text-yellow-400">90 Days</h3>
+                        <div class="my-6"><span class="text-5xl font-bold gradient-text">$49.99</span></div>
+                        <p class="text-gray-300 mb-6">90 Days Access</p>
+                        <ul class="text-left space-y-3 mb-8 text-gray-300 text-sm">
+                            <li><i class="fas fa-check text-yellow-400 mr-2"></i>Unlimited bandwidth</li>
+                            <li><i class="fas fa-check text-yellow-400 mr-2"></i>All server locations</li>
+                            <li><i class="fas fa-check text-yellow-400 mr-2"></i>V2Ray / VLESS config</li>
+                        </ul>
+                        <span class="btn-primary w-full text-center block opacity-90 cursor-default">Subscribe on live app</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="servers" class="scroll-mt-24 mb-20 text-center">
+            <h2 class="text-3xl font-bold mb-6">Server Locations</h2>
+            <p class="text-gray-300 max-w-2xl mx-auto">US, UK, Germany, Japan, Singapore, Canada, and more — full list appears in the live application.</p>
+        </section>
+
+        <section id="faq" class="scroll-mt-24 mb-20 max-w-3xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-10">FAQ</h2>
+            <div class="space-y-6 text-gray-300">
+                <div>
+                    <h3 class="font-semibold text-white mb-2">What is V2Ray?</h3>
+                    <p>A flexible proxy platform for safer, more private access to the internet.</p>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-white mb-2">Why is GitHub Pages showing this page only?</h3>
+                    <p>GitHub Pages serves static files. Your Flask app must run on a host that supports Python (Docker, Railway, a VPS, etc.).</p>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-white mb-2">How do I get login and dashboard?</h3>
+                    <p>Deploy the Python app from this repository and open your server URL — not the <code class="text-yellow-400">github.io</code> Pages URL.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="scroll-mt-24 mb-16 text-center">
+            <h2 class="text-3xl font-bold mb-4">Contact</h2>
+            <p class="text-gray-300">Use the contact form in your deployed app, or add your email here in <code class="text-yellow-400">site/index.html</code>.</p>
+        </section>
+    </main>
+
+    <footer class="mt-12 border-t border-yellow-400 border-opacity-30">
+        <div class="container mx-auto px-4 py-8 text-center text-sm text-gray-300">
+            <p>&copy; ONYX VPN. Static site via GitHub Pages.</p>
+        </div>
+    </footer>
+</body>
+</html>
